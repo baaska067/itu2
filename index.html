@@ -3,84 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About the NewsGrid editorial and how to join our club. Stay updated with quality content.">
+  <link rel="preload" href="/css/style.min.css" as="style">
   <link rel="stylesheet" href="/css/style.min.css">
-  <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile.min.css">
-  <script src="https://kit.fontawesome.com/5e00f38028.js" crossorigin="anonymous" defer></script>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <title>About Us | NewsGrid</title>
+  <script defer src="https://kit.fontawesome.com/5e00f38028.js" crossorigin="anonymous"></script>
+  
+  <title>Монголын шинэ мэдээнүүд | NewsGrid</title>
+  <meta name="description" content="Монголын шинэ, сонирхолтой мэдээнүүдийг уншиж, спорт, технологи, урлагийн сүүлийн үеийн мэдээллийг аваарай.">
+  <meta name="keywords" content="спортын мэдээ, монголын мэдээ, шинэ мэдээ, технологи, урлаг">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Монголын шинэ мэдээнүүд | NewsGrid">
+  <meta property="og:description" content="Монголын спорт, технологи, урлагийн сүүлийн үеийн мэдээнүүд.">
+  <meta property="og:image" content="https://example.com/img/logo.png">
+  <meta property="og:url" content="https://example.com">
+  
+  <!-- Twitter Cards Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Монголын шинэ мэдээнүүд | NewsGrid">
+  <meta name="twitter:description" content="Монголын спорт, технологи, урлагийн сүүлийн үеийн мэдээнүүд.">
+  <meta name="twitter:image" content="https://example.com/img/logo.png">
+  
+  <!-- Structured Data Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Монголын спортын мэдээнүүд",
+    "image": "https://example.com/img/articles/sports1.jpg",
+    "datePublished": "2024-12-16",
+    "dateModified": "2024-12-16",
+    "author": {
+      "@type": "Person",
+      "name": "Редакторын баг"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NewsGrid",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://example.com/img/logo.png"
+      }
+    },
+    "description": "Монголын спорт, технологи, урлагийн сүүлийн үеийн мэдээнүүд."
+  }
+  </script>
 </head>
 <body>
-  <!-- Navigation -->
-  <header id="main-header">
-    <nav id="main-nav" role="navigation">
-      <div class="container">
-        <img src="img/logo.webp" alt="NewsGrid logo" class="logo">
-        <div class="social">
-          <a href="http://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
-          <a href="http://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
-          <a href="http://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="http://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-        </ul>
-      </div>
-    </nav>
+  <header>
+    <img src="https://example.com/img/logo.png" alt="NewsGrid Лого">
   </header>
+  
+  <!-- Example of Critical Inline CSS -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 10px;
+    }
+    img {
+      max-width: 100px;
+      height: auto;
+    }
+  </style>
 
-  <!-- Main Content Section -->
-  <main id="about">
-    <div class="container">
-      <div class="page-container">
-        <article class="card">
-          <h1 class="l-heading">About the Editorial Team</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corporis labore pariatur eaque at odit facere perspiciatis repellendus maiores.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim autem sed facere fuga, et labore, dolor, aperiam quaerat earum blanditiis ullam. Nisi, expedita. Non quis cum optio laboriosam.</p>
-        </article>
-        <aside class="card bg-primary">
-          <h2>Join Our Club</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, labore.</p>
-          <a href="#" class="btn btn-dark btn-block">Join Now</a>
-        </aside>
-      </div>
-    </div>
+  <main>
+    <h1>Монголын мэдээнүүд</h1>
+    <p>Монголын спорт, технологи, урлагийн хамгийн сүүлийн үеийн сонирхолтой мэдээллүүдийг танд хүргэж байна.</p>
+    <a href="https://bbc.com/sport" target="_blank">BBC Sport</a>
   </main>
 
-  <!-- Footer -->
-  <footer id="main-footer" class="py-2">
-    <div class="container footer-container">
-      <div>
-        <img src="img/logo_light.webp" alt="NewsGrid logo light">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum modi labore id assumenda voluptatum neque.</p>
-      </div>
-      <div>
-        <h3>Subscribe to Our Newsletter</h3>
-        <p>Stay updated with the latest news and updates from NewsGrid.</p>
-        <form name="contact" method="POST" data-netlify="true">
-          <label for="email" class="sr-only">Email Address</label>
-          <input type="email" name="email" id="email" placeholder="Enter your email" required>
-          <input type="submit" value="Subscribe" class="btn btn-primary">
-        </form>
-      </div>
-      <div>
-        <h3>Site Links</h3>
-        <ul class="list">
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Editorial Ethics</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Join Our Club</h3>
-        <p>Connect with like-minded individuals and explore new opportunities.</p>
-        <a href="#" class="btn btn-secondary">Join Now</a>
-      </div>
-      <div>
-        <p>All rights reserved &copy; 2024</p>
-      </div>
-    </div>
+  <footer>
+    <p>&copy; 2024 NewsGrid. Бүх эрх хуулиар хамгаалагдсан.</p>
   </footer>
 </body>
 </html>
