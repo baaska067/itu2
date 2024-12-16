@@ -1,11 +1,17 @@
-/* Menu */
-#main-nav .social {
-  display: none;
-}
-
-#main-nav .container {
+/* Grid Layouts for Various Sections */
+#main-nav .container,
+#showcase .showcase-container,
+#home-articles .article-container,
+#main-footer .footer-container,
+.page-container {
+  display: grid;
   grid-template-columns: 1fr;
   gap: 1.2rem;
+}
+
+/* Specific Adjustments for Social Media and Navigation */
+#main-nav .social {
+  display: none;  /* Hide social media links */
 }
 
 #main-nav ul,
@@ -17,6 +23,7 @@
   padding: 0.5rem;
 }
 
+/* Home Articles */
 #home-articles .article-container {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -27,14 +34,19 @@
   grid-column: 1;
 }
 
+/* Media Query for Smaller Screens */
 @media (max-width: 600px) {
-  /* Stack grid items */
+  /* Stack grid items for mobile */
+  #main-nav .container,
   #showcase .showcase-container,
   #home-articles .article-container,
-  #main-footer .footer-container {
+  #main-footer .footer-container,
+  .page-container {
     grid-template-columns: 1fr;
+    gap: 0.8rem;  /* Slightly reduced gap for mobile */
   }
 
+  /* Footer Adjustments */
   #main-footer .footer-container >*:last-child {
     grid-column: 1;
   }
@@ -45,17 +57,15 @@
     padding-bottom: 1rem;
   }
 
-  /* #main-footer .footer-container > *:last-child,
-  #main-footer .footer-container > *:nth-child(3),
-  #main-footer .footer-container > *:nth-child(4) {
-    border: none;
-  } */
-
-  .page-container {
-    grid-template-columns: 1fr;
-  }
-
+  /* Page Container Layout */
   .page-container >*:first-child {
     grid-row: 1;
   }
-}
+
+  /* Adjusting Font Sizes for Mobile */
+  body {
+    font-size: 14px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2
