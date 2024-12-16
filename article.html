@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,55 @@
   <script src="https://kit.fontawesome.com/5e00f38028.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>NewsGrid | Шинэ мэдээ</title>
+  <!-- SEO Metadata -->
+  <meta name="description" content="Шинэ, сонирхолтой мэдээнүүдийг уншиж, спорт, технологи, урлагийн сүүлийн үеийн мэдээллийг аваарай.">
+  <meta name="keywords" content="шинэ мэдээ, спорт, технологи, урлаг, Монголын мэдээ">
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="NewsGrid | Шинэ мэдээ">
+  <meta property="og:description" content="Шинэ, сонирхолтой мэдээнүүдийг уншиж, спорт, технологи, урлагийн сүүлийн үеийн мэдээллийг аваарай.">
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:url" content="https://example.com">
+  
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NewsGrid | Шинэ мэдээ">
+  <meta name="twitter:description" content="Шинэ, сонирхолтой мэдээнүүдийг уншиж, спорт, технологи, урлагийн сүүлийн үеийн мэдээллийг аваарай.">
+  <meta name="twitter:image" content="img/logo.png">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Шинэ мэдээ",
+    "image": "img/articles/ent1.jpg",
+    "datePublished": "2024-12-16",
+    "author": {
+      "@type": "Person",
+      "name": "Бааска"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NewsGrid",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "img/logo_light.png"
+      }
+    },
+    "description": "Шинэ мэдээ, сонирхолтой мэдээллийг бидний вэбсайтаас үзнэ үү."
+  }
+  </script>
 </head>
 <body>
   <nav id="main-nav">
     <div class="container">
-      <img src="img/logo.png" alt="newsgrid" class="logo">
+      <img src="img/logo.png" alt="NewsGrid Logo" class="logo">
       <div class="social">
-        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="http://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="http://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="http://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="http://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
       </div>
       <ul>
         <li><a href="index.html">Нүүр</a></li>
@@ -25,22 +64,23 @@
       </ul>
     </div>
   </nav>
-  <!-- section -->
+
+  <!-- Article Section -->
   <section id="article">
     <div class="container">
       <div class="page-container">
         <article class="card">
-          <img src="img/articles/ent1.jpg" alt="">
+          <img src="img/articles/ent1.jpg" alt="Article Image">
           <h1 class="l-heading">Lorem ipsum dolor sit amet.</h1>
           <div class="meta">
-            <small>
-              <i class="fas fa-user">Нийтлэгч: Бааска</i>
-            </small>
+            <small><i class="fas fa-user"></i> Нийтлэгч: Бааска</small>
             <div class="category category-art">Соёл урлаг</div>
           </div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corporis labore pariatur eaque at odit facere perspiciatis repellendus maiores. Ipsam iste blanditiis corporis dolor voluptas quaerat obcaecati quam asperiores, dolorem nesciunt qui recusandae doloribus deleniti eveniet dolores atque consequuntur earum reiciendis animi ullam quos pariatur harum quisquam libero. Ipsam, doloremque.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum enim autem sed facere fuga, et labore, dolor, aperiam quaerat earum blanditiis ullam. Nisi, expedita. Non quis cum optio laboriosam qui, porro ipsum doloremque tempora quo dolorem nemo fugit? Vitae deleniti reprehenderit itaque aut error, provident consectetur ipsam eius laudantium hic illum aspernatur dicta vel soluta omnis, velit voluptates commodi dolor nihil magnam voluptatum doloribus, corrupti quasi similique? Voluptatibus id quasi a ipsam, neque minus, fuga error molestias, modi reprehenderit at mollitia corporis incidunt. Laboriosam, libero reprehenderit ab eius id nihil tenetur quibusdam dolores cum nostrum, quis laudantium impedit. Nemo, quas. Laboriosam, libero reprehenderit ab eius id nihil tenetur quibusdam dolores cum nostrum, quis laudantium impedit. Nemo, quas. Laboriosam, libero reprehenderit ab eius id nihil tenetur quibusdam dolores cum nostrum, quis laudantium impedit. Nemo, quas. Laboriosam, libero reprehenderit ab eius id nihil tenetur quibusdam dolores cum nostrum, quis laudantium impedit. Nemo, quas.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio corporis labore pariatur eaque at odit facere perspiciatis repellendus maiores...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum enim autem sed facere fuga, et labore, dolor, aperiam quaerat earum blanditiis ullam...</p>
         </article>
+
+        <!-- Categories Sidebar -->
         <aside id="categories" class="card">
           <h2>Мэдээний төрөл</h2>
           <ul class="list">
@@ -50,6 +90,8 @@
             <li><a href="#"><i class="fas fa-chevron-right"></i> Улс төр</a></li>
           </ul>
         </aside>
+
+        <!-- Club Join Sidebar -->
         <aside class="card bg-secondary">
           <h2>Манай клубт нэгдэх</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, labore.</p>
@@ -59,19 +101,18 @@
     </div>
   </section>
 
-
-  <!-- footer -->
-  <div id="main-footer" class="py-2">
+  <!-- Footer -->
+  <footer id="main-footer" class="py-2">
     <div class="container footer-container">
       <div>
-        <img src="img/logo_light.png" alt="newsgrid">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum modi labore id assumenda voluptatum neque.</p>
+        <img src="img/logo_light.png" alt="NewsGrid Logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A laborum modi labore id assumenda voluptatum neque.</p>
       </div>
       <div>
         <h3>И-мейл бүртгүүлэх</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <form name="contact" method="POST" data-netlify="true">
-          <input type="email" name="email" placeholder="И-мейл-ээ бичнэ үү">
+          <input type="email" name="email" placeholder="И-мейл-ээ бичнэ үү" required>
           <input type="submit" value="Бүртгүүлэх" class="btn btn-primary">
         </form>
       </div>
@@ -90,9 +131,9 @@
         <a href="#" class="btn btn-secondary">Нэгдэх</a>
       </div>
       <div>
-        <p>Бүх эрх хуулиар хамгаалагдсан &copy 2020</p>
+        <p>Бүх эрх хуулиар хамгаалагдсан &copy; 2024</p>
       </div>
     </div>
-  </div>
+  </footer>
 </body>
 </html>
